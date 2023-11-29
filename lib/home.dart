@@ -6,12 +6,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text(
-          'Testing The font',
-          style: TextStyle(fontFamily: 'Roboto'),
-        ),
+        body: SafeArea(
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Text(
+                'Shoes\nCollection',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 35,
+                ),
+              ),
+              SizedBox(
+                width: 26,
+                child: TextField(),
+              )
+            ],
+          )
+        ],
       ),
-    );
+    ));
   }
 }

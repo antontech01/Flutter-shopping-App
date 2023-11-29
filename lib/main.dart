@@ -10,10 +10,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Shooping App',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      theme: ThemeData(
+          fontFamily: 'Roboto',
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: const Color.fromARGB(255, 254, 132, 1))),
+      home: const HomePage(),
     );
   }
 }
