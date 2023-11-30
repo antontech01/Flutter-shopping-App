@@ -16,7 +16,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           fontFamily: 'Roboto',
           colorScheme: ColorScheme.fromSeed(
-              seedColor: const Color.fromARGB(255, 254, 132, 1))),
+            seedColor: const Color.fromARGB(255, 254, 132, 1),
+          ),
+          inputDecorationTheme: const InputDecorationTheme(
+            hintStyle: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 16,
+            ),
+            prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
+          )),
       home: const HomePage(),
     );
   }
