@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Roboto',
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color.fromARGB(255, 254, 132, 1),
+            primary: const Color.fromARGB(255, 254, 132, 1),
           ),
           inputDecorationTheme: const InputDecorationTheme(
             hintStyle: TextStyle(
